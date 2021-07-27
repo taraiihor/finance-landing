@@ -1,0 +1,33 @@
+<section class="contact-sections" id="contact">
+  <div class="form__img"><img src="./images/home/contact.jpg" alt="" /></div>
+
+  <div class="form-block">
+    <h2 class="form__title">Request Callback</h2>
+    <form class="form" method="POST" data-netlify="true">
+      <div class="label__block">
+        <input
+          class="form__input"
+          type="text"
+          placeholder=" "
+          id="name"
+          name="name"
+        />
+        <label class="form__label" for="name">Enter your name</label>
+      </div>
+      <div class="label__block">
+        <input
+          class="form__input"
+          type="email"
+          placeholder=" "
+          id="email"
+          name="email"
+        />
+        <label class="form__label" for="email">Enter email*</label
+        ><span id="error" class="form__error fas fa-exclamation-triangle">
+          This is a required field
+        </span>
+      </div>
+      <button class="form__button list" type="submit">Send</button>
+    </form>
+  </div>
+</section>

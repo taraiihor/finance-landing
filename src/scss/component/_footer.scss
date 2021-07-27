@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //   width: 320px;
+  height: 110px;
+
+  background: #333333;
+}
+
+.footer__social {
+  margin: -12.5px;
+  display: flex;
+  color: $white-color;
+  justify-content: center;
+}
+
+.footer__item {
+  font-size: 35px;
+  margin: 12.5px;
+  color: $white-color;
+}
+.footer__link {
+  color: $white-color;
+  &:hover {
+    color: $accent-color;
+  }
+}
+.copirate {
+  margin-top: 9px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 160% */
+
+  text-align: center;
+
+  color: #ffffff;
+}

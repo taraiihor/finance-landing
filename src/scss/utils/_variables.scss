@@ -1,0 +1,56 @@
+// Sizes
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1360px;
+// @import '../../images/webfonts/';
+//Color
+$accent-color: #28a745;
+$white-color: #ffffff;
+
+//Fonts
+$ff: Open Sans;
+
+$fa-font-path: '../../webfonts/';
+body {
+  font-family: $ff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.box {
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
