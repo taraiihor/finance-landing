@@ -1,84 +1,85 @@
 .about-section {
   width: 320;
-  text-align: center;
   padding: 30px 0;
+
+  text-align: center;
 }
 .about {
   margin-bottom: -18px;
   padding: 0 30px;
+
   list-style: none;
   text-decoration: none;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
+  @media screen and (min-width: $tablet) {
     padding: 0 55px;
     margin-left: -50px;
+
+    display: flex;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desktop) {
     margin-left: -71px;
     padding: 0 66px;
   }
 }
 .about__item {
+  margin-bottom: 18px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 18px;
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
     margin-left: 50px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 71px;
   }
 }
 .about__icon {
+  margin-bottom: 9px;
+  padding: 16px;
+
   display: table-cell;
   vertical-align: middle;
   font-size: 34px;
-  padding: 16px;
+
   border-radius: 50%;
-  margin-bottom: 9px;
 
-  background-color: #28a745;
-  color: #ffff;
+  background-color: $accent-color;
+  color: $white-color;
 
-  @media screen and (min-width: 768px) {
-    font-size: 35px;
+  @media screen and (min-width: $tablet) {
     margin-bottom: 15px;
+    font-size: 35px;
   }
 }
 .about__title {
   margin-bottom: 15px;
-  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  /* identical to box height, or 166% */
-
   text-align: center;
 
-  color: #333333;
+  color: $text-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 33px;
   }
 }
 
 .about__text {
-  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  /* or 160% */
-
   text-align: center;
 
-  color: #333333;
-  @media screen and (min-width: 768px) {
+  color: $text-color;
+  @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 28px;
   }

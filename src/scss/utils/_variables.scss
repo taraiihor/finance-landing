@@ -2,15 +2,18 @@
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1360px;
-// @import '../../images/webfonts/';
+
 //Color
 $accent-color: #28a745;
 $white-color: #ffffff;
+$text-color: #333333;
+$error-color: rgb(146, 37, 37);
 
 //Fonts
 $ff: Open Sans;
 
 $fa-font-path: '../../webfonts/';
+
 body {
   font-family: $ff;
 }

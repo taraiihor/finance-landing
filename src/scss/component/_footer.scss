@@ -1,19 +1,22 @@
 .footer {
+  height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  //   width: 320px;
-  height: 110px;
 
-  background: #333333;
+  background: $text-color;
 }
 
 .footer__social {
   margin: -12.5px;
   display: flex;
-  color: $white-color;
   justify-content: center;
+
+  color: $white-color;
+
+  list-style: none;
+  text-decoration: none;
 }
 
 .footer__item {
@@ -23,6 +26,12 @@
 }
 .footer__link {
   color: $white-color;
+
+  list-style: none;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     color: $accent-color;
   }
@@ -34,9 +43,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 160% */
-
   text-align: center;
 
-  color: #ffffff;
+  color: $white-color;
 }

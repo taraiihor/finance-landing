@@ -1,29 +1,33 @@
 .header__section {
-  padding-bottom: 20px;
+  width: 100%;
+
   position: fixed;
   z-index: 11;
-  width: 100%;
-  // height: 120px;
-  // background-color: rgba(0, 0, 0, 0.4);
-  @media screen and (min-width: 768px) {
-    // height: 70px;
+
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
     padding-top: 20px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desktop) {
     width: 1360px;
   }
 }
 
 .header__container {
   max-width: 320px;
-  text-align: center;
+
   margin-left: auto;
   margin-right: auto;
+
   padding: 20px 15px 20px 15px;
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
     max-width: 100%;
-    padding: 0 40px;
     display: flex;
+
+    padding: 0 40px;
+
     justify-content: space-between;
     align-items: center;
   }
@@ -38,11 +42,14 @@
 
   color: $accent-color;
 
+  list-style: none;
+  text-decoration: none;
+
   cursor: pointer;
   transition: transform 250ms linear;
   transform: scale(1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 35px;
     line-height: 42px;
   }
@@ -55,19 +62,20 @@
 .span_accent {
   color: $white-color;
 }
-.list {
-  list-style: none;
-  text-decoration: none;
-}
+
 .menu {
   margin-top: 10px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 0;
   }
 }
+
 .menu__list {
   display: flex;
   justify-content: center;
+
+  list-style: none;
+  text-decoration: none;
 }
 
 .menu__link {
@@ -77,17 +85,29 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
+
+  list-style: none;
+  text-decoration: none;
+
   color: $white-color;
-  @media screen and (min-width: 768px) {
-    padding: 10px 9px;
-    font-size: 18px;
-    line-height: 28px;
-  }
-  @media screen and (min-width: 1360px) {
-    padding: 10px 19px;
-  }
+
   &:hover,
   :focus {
     border-bottom: 3px solid $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    padding: 10px 9px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 10px 19px;
+  }
 }
+
+//Вмикає якщо це треба реалізувати через JS
+// .active {
+//   border-bottom: 3px solid $accent-color;
+// }

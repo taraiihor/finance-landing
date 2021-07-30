@@ -71,23 +71,21 @@ function html() {
   );
 }
 function css() {
-  return (
-    src(path.src.css)
-      .pipe(scss({ outputStyle: 'expanded' }))
-      .pipe(group_media())
-      .pipe(
-        autoprefixer({
-          overrideBrowserslist: ['last 5 versions'],
-          cascade: true,
-        }),
-      )
-      // .pipe(webpcss())
-      .pipe(dest(path.build.css))
-      .pipe(clean_css())
-      .pipe(rename({ extname: '.min.css' }))
-      .pipe(dest(path.build.css))
-      .pipe(browsersync.stream())
-  );
+  return src(path.src.css)
+    .pipe(scss({ outputStyle: 'expanded' }))
+    .pipe(group_media())
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ['last 5 versions'],
+        cascade: true,
+      }),
+    )
+    .pipe(webpcss())
+    .pipe(dest(path.build.css))
+    .pipe(clean_css())
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(dest(path.build.css))
+    .pipe(browsersync.stream());
 }
 function js() {
   return (
@@ -206,3 +204,12 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+
+var deploy = require('gulp-gh-pages');
+var options = {
+  remoteUrl: 'https://github.com/taraiihor/test-task',
+  branch: 'master',
+};
+gulp.task('deploy', function () {
+  gulp.src('dist/**/*.*').pipe(deploy(options));
+});

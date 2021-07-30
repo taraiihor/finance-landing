@@ -1,65 +1,60 @@
-.gallery-section {
+.cases-section {
   padding: 50px 28px 46px 28px;
 }
 
-.gallery-block {
+.cases-block {
   padding: 0 5px;
 }
-.gallery__subtitle {
+.cases__subtitle {
   margin-bottom: 15px;
 
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  /* identical to box height, or 166% */
-
   text-align: center;
 
-  color: #333333;
-  @media screen and (min-width: 768px) {
+  color: $text-color;
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 33px;
   }
 }
-.gallery__title {
+.cases__title {
   margin-bottom: 35px;
 
   font-style: normal;
   font-weight: 300;
   font-size: 38px;
   line-height: 48px;
-  /* or 126% */
-
   text-align: center;
 
-  color: #333333;
+  color: $text-color;
 }
 
-.gallery__text {
+.cases__text {
   margin-bottom: 37px;
 
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  /* or 160% */
-
   text-align: center;
 
-  color: #333333;
-  @media screen and (min-width: 768px) {
+  color: $text-color;
+  @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 28px;
   }
 }
 
 .slider {
+  margin-bottom: -7px;
+
   list-style: none;
   text-decoration: none;
 
-  margin-bottom: -7px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,13 +63,15 @@
 }
 .slider__item {
   margin-bottom: 7px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 172px;
     margin-left: 8px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desktop) {
     width: 320px;
   }
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     opacity: 0.7;

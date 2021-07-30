@@ -1,6 +1,15 @@
 <section class="solutions-secction">
   <div class="solutions__img">
-    <img src="./images/home/people.jpg" alt="фотографія колективу" />
+    <picture>
+      <source
+        srcset="./images/home/people.webp 1x, ./images/home/people@2x.webp 2x"
+      />
+      <img
+        src="./images/home/people.jpg"
+        alt="photo of the team"
+        srcset="./images/home/people@2x.jpg 2x"
+      />
+    </picture>
   </div>
   <div class="solutions-block">
     <h3 class="solutions__subtitle">What you are looking for</h3>

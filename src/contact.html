@@ -1,23 +1,28 @@
 <section class="contact-sections" id="contact">
-  <div class="form__img"><img src="./images/home/contact.jpg" alt="" /></div>
-
+  <div class="contact__img">
+    <picture>
+      <source
+        srcset="./images/home/contact.webp 1x, ./images/home/contact@2x.webp 2x"
+      />
+      <img
+        src="./images/home/contact.jpg"
+        alt="photp person"
+        srcset="./images/home/contact@2x.jpg 2x"
+      />
+    </picture>
+  </div>
   <div class="form-block">
     <h2 class="form__title">Request Callback</h2>
-    <form class="form" method="POST" data-netlify="true">
+    <!--  method="POST"  -->
+    <form class="form">
       <div class="label__block">
-        <input
-          class="form__input"
-          type="text"
-          placeholder=" "
-          id="name"
-          name="name"
-        />
+        <input class="form__input" type="text" placeholder=" " id="name" />
         <label class="form__label" for="name">Enter your name</label>
       </div>
       <div class="label__block">
         <input
           class="form__input"
-          type="email"
+          type=""
           placeholder=" "
           id="email"
           name="email"

@@ -1,30 +1,29 @@
 .blog-section {
-  // margin: 0 auto;
-  // max-width: 320px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
   }
 }
 .blog__img {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 50%;
   }
 }
-.blog__img > img {
-  object-fit: cover;
-  display: block;
+.blog__img > picture > img {
   height: 100%;
+  display: block;
+  object-fit: cover;
 }
+
 .blog-block {
   padding: 30px;
   background-color: #0284d0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 50%;
     padding-right: 39px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desktop) {
     padding-right: 44px;
     padding-bottom: 113px;
     padding-top: 112px;
@@ -38,10 +37,9 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  /* identical to box height, or 166% */
 
-  color: #ffffff;
-  @media screen and (min-width: 768px) {
+  color: $white-color;
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 33px;
   }
@@ -50,60 +48,59 @@
 .blog__title {
   margin-bottom: 25px;
 
-  font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
   font-size: 38px;
   line-height: 48px;
-  /* identical to box height, or 126% */
 
-  color: #ffffff;
-  @media screen and (min-width: 768px) {
+  color: $white-color;
+  @media screen and (min-width: $tablet) {
   }
 }
 
 .blog__text {
   margin-bottom: 14px;
-  font-family: Open Sans;
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.6;
-  /* or 160% */
 
-  color: #ffffff;
+  color: $white-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 28px;
   }
 }
 
 .blog__button {
-  font-family: Open Sans;
+  width: 184px;
+  height: 47px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 160% */
 
-  color: #ffffff;
+  color: $white-color;
 
-  width: 184px;
-  height: 47px;
-
-  border: 1px solid #ffffff;
+  border: 1px solid $white-color;
   box-sizing: border-box;
   border-radius: 5px;
 
   background-color: Transparent;
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-    line-height: 28px;
-  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #ffffff;
+    background-color: $white-color;
     color: #0284d0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
