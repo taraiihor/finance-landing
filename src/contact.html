@@ -13,26 +13,26 @@
   </div>
   <div class="form-block">
     <h2 class="form__title">Request Callback</h2>
-    <!--  method="POST"  -->
-    <form class="form">
+
+    <form class="form" name="form" method="POST" netlify>
       <div class="label__block">
-        <input class="form__input" type="text" placeholder=" " id="name" />
+        <input class="form__input" type="text" placeholder=" " name="name" />
         <label class="form__label" for="name">Enter your name</label>
       </div>
       <div class="label__block">
         <input
           class="form__input"
-          type=""
+          type="email"
           placeholder=" "
-          id="email"
           name="email"
+          id="email"
         />
         <label class="form__label" for="email">Enter email*</label
         ><span id="error" class="form__error fas fa-exclamation-triangle">
           This is a required field
         </span>
       </div>
-      <button class="form__button list" type="submit">Send</button>
+      <button class="form__button" type="submit">Send</button>
     </form>
   </div>
 </section>

@@ -92,7 +92,7 @@ function js() {
     src(path.src.js)
       .pipe(fileinclude())
       .pipe(dest(path.build.js))
-      //.pipe(babel({ presets: ['@babel/preset-env'] }))
+      // .pipe(babel({ presets: ['@babel/preset-env'] }))
       .pipe(uglify())
       .pipe(rename({ extname: '.min.js' }))
       .pipe(dest(path.build.js))
@@ -205,11 +205,11 @@ exports.build = build;
 exports.watch = watch;
 exports.default = watch;
 
-var deploy = require('gulp-gh-pages');
-var options = {
-  remoteUrl: 'https://github.com/taraiihor/test-task',
-  branch: 'master',
-};
-gulp.task('deploy', function () {
-  gulp.src('dist/**/*.*').pipe(deploy(options));
-});
+// var deploy = require('gulp-gh-pages');
+// var options = {
+//   remoteUrl: 'https://github.com/taraiihor/test-task',
+//   branch: 'master',
+// };
+// gulp.task('deploy', function () {
+//   gulp.src('dist/**/*.*').pipe(deploy(options));
+// });
