@@ -17,10 +17,9 @@ let isFormValid = false;
 
 function validateInputs() {
   isFormValid = true;
-
-  worningStyle.style.opacity = 0;
+  worningStyle.classList.add('visually-hidden');
   if (!emailInput.isValid()) {
-    worningStyle.style.opacity = 1;
+    worningStyle.classList.remove('visually-hidden');
     isFormValid = false;
   }
 }

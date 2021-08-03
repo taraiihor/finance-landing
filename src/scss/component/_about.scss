@@ -1,24 +1,26 @@
 .about-section {
-  width: 320;
   padding: 30px 0;
 
   text-align: center;
+  @media screen and (min-width: $tablet) {
+    padding: 40px 0 47px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 40px 0 19px 0;
+  }
 }
 .about {
-  margin-bottom: -18px;
   padding: 0 30px;
 
   list-style: none;
   text-decoration: none;
 
   @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
     padding: 0 55px;
-    margin-left: -50px;
-
     display: flex;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: -71px;
     padding: 0 66px;
   }
 }
@@ -31,12 +33,19 @@
   flex-direction: column;
 
   @media screen and (min-width: $tablet) {
-    margin-left: 50px;
+    margin-bottom: 0;
+    margin-right: 50px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 71px;
+    margin-right: 71px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
+
 .about__icon {
   margin-bottom: 9px;
   padding: 16px;

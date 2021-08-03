@@ -30,7 +30,7 @@ function addStyleMenu(screenSize) {
 function addBackgroundColor(value) {
   window.addEventListener('scroll', function () {
     if (pageYOffset >= value) {
-      hederSectiot.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
+      hederSectiot.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
     } else {
       hederSectiot.style.backgroundColor = 'Transparent';
     }

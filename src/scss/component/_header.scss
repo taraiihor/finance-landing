@@ -1,10 +1,13 @@
 .header__section {
   width: 100%;
+  text-align: center;
 
   position: fixed;
   z-index: 11;
 
   padding-bottom: 20px;
+
+  opacity: 0.8;
 
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
